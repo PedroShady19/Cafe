@@ -3,13 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <android.support.design.widget.AppBarLayout
+    <LinearLayout
+        android:id="@+id/layout_uploadingImage"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnChooseImage"
+            android:text="@string/choose_image"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btnUploadImage"
+            android:text="@string/upload_image"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
 
-    </android.support.design.widget.AppBarLayout>
-
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_below="@id/layout_uploadingImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/ver_a_imagem_que_estou_a_escolher" />
 </RelativeLayout>
