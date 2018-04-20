@@ -1,5 +1,9 @@
 apply plugin: 'com.android.application'
-
+android {
+    lintOptions {
+        abortOnError false
+    }
+}
 android {
     compileSdkVersion 27
     defaultConfig {
