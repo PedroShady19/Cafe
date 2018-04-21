@@ -9,4 +9,6 @@
     <string name="logo_eat_it_desenho">logo_eat_it_desenho</string>
     <string name="slogan">No matter where you are we will find you and we will feed you </string>
     <string name="adicionar_comida">Adicionar Comida</string>
+    <string name="phone">Phone Number</string>
+    <string name="password">Password</string>
 </resources>
