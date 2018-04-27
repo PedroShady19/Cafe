@@ -27,7 +27,7 @@ import java.util.UUID;
 
 public class MainActivity extends AppCompatActivity {
     //Variaveis
-    private Button btnChooseImage,btnUploadImage;
+    private Button btnChooseImage,btnUploadImage,btnLogin;
     private ImageView imageView;
 
     private Uri filePath;
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
         //Init View
         btnChooseImage= findViewById(R.id.btnChooseImage);
         btnUploadImage=findViewById(R.id.btnUploadImage);
+        btnLogin=findViewById(R.id.btnLogin);
         imageView=findViewById(R.id.imageView);
 
         btnChooseImage.setOnClickListener(new View.OnClickListener() {
@@ -63,8 +64,17 @@ public class MainActivity extends AppCompatActivity {
                 uploadImage();
             }
         });
+        //Botao Login
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent login=new Intent(MainActivity.this,login.class);
+                startActivity(login);
+            }
+        });
 
     }
+
 
     private void uploadImage() {
         if(filePath !=null)
