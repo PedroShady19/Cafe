@@ -51,11 +51,12 @@ public class login extends AppCompatActivity {
                             if (utilizador.getPassword().equals(edtPassword.getText().toString())) {
                                 Toast.makeText(login.this, "Sign in successfully!", Toast.LENGTH_SHORT).show();
                             } else {
-                                Toast.makeText(login.this, "Sign in failed!", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(login.this, "Wrong Password!", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else
                         {
+                            mDialog.dismiss();
                             Toast.makeText(login.this, "Utilizador não existe na base de dados", Toast.LENGTH_SHORT).show();
                         }
                     }
