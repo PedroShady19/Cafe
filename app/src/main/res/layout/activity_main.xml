@@ -62,20 +62,20 @@
         android:contentDescription="@string/ver_a_imagem_que_estou_a_escolher" />
 
     <Button
-    android:id="@+id/btnAdicionar_Comida"
+    android:id="@+id/btnSignUp"
     android:layout_width="150dp"
     android:layout_height="60dp"
     android:layout_alignParentBottom="true"
     android:layout_alignParentStart="true"
     android:layout_marginBottom="5dp"
     android:layout_marginStart="15dp"
-    android:text="@string/adicionar_comida"/>
+    android:text="Sign Up"/>
 
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_toEndOf="@+id/btnAdicionar_Comida"
+        android:layout_toEndOf="@+id/btnSignUp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="5dp"
         android:layout_marginStart="15dp"
