@@ -29,6 +29,7 @@
             android:textColor="@android:color/white" />
 
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/layout_uploadingImage"
         android:orientation="horizontal"
